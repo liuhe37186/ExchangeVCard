@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/id_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#232327">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#232327"
+            android:text="取消"
+            android:textSize="16sp"
+            android:id="@+id/id_cancle"
+            android:textColor="#FFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="微信登录"
+            android:id="@+id/textView"
+            android:textColor="#FFF"
+            android:layout_alignTop="@+id/id_cancle"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="微信安全登录"
+            android:id="@+id/textView2"
+            android:textColor="#FFF"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/id_title">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#CCC"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_logo"
+        android:background="#EFEFF4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="    登录后该用户将获得以下权限"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获得你的公开信息（昵称，头像等）"
+            android:id="@+id/checkBox"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="true"/>
+        <RelativeLayout
+            android:id="@+id/id_login_style_wechat"
+            android:layout_below="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#1cbb1f">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="确认登录"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

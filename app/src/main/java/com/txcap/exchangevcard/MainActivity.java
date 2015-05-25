@@ -5,12 +5,15 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 
+import net.tsz.afinal.FinalHttp;
+
 
 public class MainActivity extends FragmentActivity {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
+    FinalHttp finalHttp;
     private NavigationDrawerFragment mNavigationDrawerFragment;
     ViewPager viewPager;
 

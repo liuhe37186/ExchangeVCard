@@ -11,4 +11,9 @@
     <string name="action_example">Example action</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_login_style">LoginStyleActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ensure_login_as_we_chat">EnsureLoginAsWeChatActivity</string>
+    <string name="title_activity_bind_phone_num">BindPhoneNumActivity</string>
 </resources>
